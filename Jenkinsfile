@@ -2,11 +2,11 @@ pipeline {
     agent none
     stages {
         stage ('SKIP stage testing') {
-            steps{
-                agent any
+            agent any
             options {
                 skipDefaultCheckout()
             }
+            steps{
             echo "Trying skip default checkout"
             }
         }
